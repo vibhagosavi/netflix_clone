@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Website Clone</title>
+
+  <link rel="icon" type="image/png" href="images/Netflix-Emblem.jpg" />
+  <link rel="shortcut icon" href="images/Netflix-Emblem.jpg" type="image/x-icon" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+
+</head>
+
+<body class="bg-black text-white">
+
+
+
+
+  <!-- HEADER -->
+  <header class="header container-fluid py-4">
+    <nav class="d-flex justify-content-between align-items-center px-3 px-md-5 logonetflix">
+      <img src="images/logo.png" class="logo img-fluid" alt="Netflix Logo" />
+
+      <div class="d-flex align-items-center gap-3 ">
+        <select class="sel" style="width: 130px;">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Marathi</option>
+          <option>Gujarati</option>
+          <option>Telugu</option>
+          <option>Maliyalam</option>
+          <option>Bengoli</option>
+        </select>
+        <button class="btn btn-danger px-3 signinbtn">Sign In</button>
+      </div>
+    </nav>
+
+    <div class="header-content text-center mt-5 px-3">
+      <h1 data-aos="fade-down" data-aos-duration="1500">Unlimited Movies, TV Shows, and More.</h1>
+      <h4 data-aos="fade-down" data-aos-duration="1500">Watch anywhere. Cancel anytime.</h4>
+      <p data-aos="fade-down" data-aos-duration="1000">
+        Ready to watch? Enter your email to create or restart your membership.
+      </p>
+
+      <form class="email-signup" data-aos="fade-up" data-aos-duration="2000">
+        <input type="email" placeholder="Email address" required>
+        <button type="submit">Get Started</button>
+      </form>
+
+    </div>
+  </header>
+
+
+
+
+  <!-- MOVIE SEARCH -->
+  <section class="search-section container-fluid text-center py-5">
+    <h2 class="">🔍 Search Movies</h2>
+
+    <!-- ✅ FIXED SEARCH FORM -->
+    <form id="searchForm" class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search for a movie..."
+        required />
+      <button type="submit" class="btn btn-outline-light btn-lg px-4">Search</button>
+    </form>
+
+    <div id="searchResults" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 mb-0"></div>
+  </section>
+
+
+
+
+
+  <!-- TRENDING MOVIES -->
+  <section class="movies-section newmovie container-fluid text-center py-5">
+    <h2 class=" mb-3">🔥Trending Now</h2>
+    <div class="d-flex justify-content-center gap-3 mb-4">
+      <button id="prevBtn" class="btn btn-outline-light ">❮ Prev</button>
+      <button id="nextBtn" class="btn btn-outline-light">Next ❯</button>
+    </div>
+    <div id="movieContainer" class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3"></div>
+  </section>
+
+
+
+
+
+
+  <!-- FEATURES -->
+  <section class="features container-fluid py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 tv" data-aos="fade-up" data-aos-duration="3000">
+        <h2>Enjoy on your TV</h2>
+        <p>Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, and more.</p>
+      </div>
+      <div class="col-md-6 text-center tvimg tvimganim2" data-aos="fade-down" data-aos-duration="3000">
+        <img src="images/feature-1.png" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+
+    <div class="row align-items-center flex-md-row-reverse mb-5">
+      <div class="col-md-6 tv" data-aos="fade-up" data-aos-duration="3000">
+        <h2>Download your shows to watch offline</h2>
+        <p>Save your favourites easily and always have something to watch.</p>
+      </div>
+      <div class="col-md-6 text-center tvimg" data-aos="fade-down" data-aos-duration="3000">
+        <img src="images/feature-2.png" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 tv" data-aos="fade-up" data-aos-duration="3000"">
+        <h2>Watch Everywhere</h2>
+        <p>Stream unlimited movies and shows on your phone, tablet, laptop, and TV.</p>
+      </div>
+      <div class=" col-md-6 text-center tvimg" data-aos="fade-down" data-aos-duration="3000">
+        <img src="images/feature-3.png" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6 tv" data-aos="fade-up" data-aos-duration="3000">
+        <h2>Create profiles for children</h2>
+        <p>Send children on adventures with their favourite characters in a space made just for them.</p>
+      </div>
+      <div class="col-md-6 text-center tvimg" data-aos="fade-down" data-aos-duration="3000">
+        <img src="images/feature-4.png" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- FAQ -->
+  <div class="faq">
+    <div class="container-fluid">
+      <h2>Frequently Asked Questions</h2>
+      <ul class="accordion">
+        <li data-aos="fade-up" data-aos-duration="3000">
+          <input type="radio" name="accordion" id="first">
+          <label for="first" class="lable">What is netflix?</label>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni similique velit nostrum
+              placeat ratione voluptates quo quos nulla et perspiciatis blanditiis dolores repellat neque
+              fugit atque, sequi aliquid maxime?</p>
+          </div>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="3000">
+          <input type="radio" name="accordion" id="second">
+          <label for="second" class="lable">How much does Netflix cost?</label>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni similique velit nostrum
+              placeat ratione voluptates quo quos nulla et perspiciatis blanditiis dolores repellat neque
+              fugit atque, sequi aliquid maxime?</p>
+          </div>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="3000">
+          <input type="radio" name="accordion" id="third">
+          <label for="third" class="lable">Where can I watch?</label>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni similique velit nostrum
+              placeat ratione voluptates quo quos nulla et perspiciatis blanditiis dolores repellat neque
+              fugit atque, sequi aliquid maxime?</p>
+          </div>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="3000">
+          <input type="radio" name="accordion" id="fourth">
+          <label for="fourth" class="lable">How Do I cancel?</label>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni similique velit nostrum
+              placeat ratione voluptates quo quos nulla et perspiciatis blanditiis dolores repellat neque
+              fugit atque, sequi aliquid maxime?</p>
+          </div>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="3000">
+          <input type="radio" name="accordion" id="fifth">
+          <label for="fifth" class="lable">What can I watch on Netflix?</label>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni similique velit nostrum
+              placeat ratione voluptates quo quos nulla et perspiciatis blanditiis dolores repellat neque
+              fugit atque, sequi aliquid maxime?</p>
+          </div>
+        </li>
+        <li data-aos="fade-up" data-aos-duration="3000">
+          <input type="radio" name="accordion" id="sixth">
+          <label for="sixth" class="lable">Is Netflix good for kids?</label>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam magni similique velit nostrum
+              placeat ratione voluptates quo quos nulla et perspiciatis blanditiis dolores repellat neque
+              fugit atque, sequi aliquid maxime?</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <h2>Questions? Call 123-456-789</h2>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 newlist">
+          <a href="#">FAQ</a>
+          <a href="#">Investors Relationships</a>
+          <a href="#">Privacy</a>
+          <a href="#">Speed Test</a>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 newlist">
+          <a href="#">Help Center</a>
+          <a href="#">Jobs</a>
+          <a href="#">Cookies Preferences</a>
+          <a href="#">Legal Notices</a>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 newlist acc">
+          <a href="#">Account</a>
+          <a href="#">Ways to watch</a>
+          <a href="#">Corporate Information</a>
+          <a href="#">Only on Netflix</a>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 newlist acc">
+          <a href="#">Media Center</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+
+
+
+      <div class="mt-4">
+        <select class="sel newsel">
+          <option>English</option>
+          <option>Hindi</option>
+          <option>Marathi</option>
+          <option>Gujarati</option>
+          <option>Telugu</option>
+          <option>Maliyalam</option>
+          <option>Bengoli</option>
+        </select>
+        <p class="text mt-2">Netflix India</p>
+      </div>
+    </div>
+    <!-- </footer> -->
+
+
+
+
+    <!-- js link -->
+    <script src="js/netflix.js"></script>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

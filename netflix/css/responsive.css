@@ -1,0 +1,254 @@
+@media (min-width: 375px) and (max-width: 425.98px) {
+    .header-content h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .header-content h4 {
+        font-size: 15px;
+    }
+
+    .header-content p {
+        font-size: 13px;
+    }
+
+    .email-signup button {
+        font-size: 10px;
+        padding: 8px 12px;
+        margin-left: 2%;
+    }
+
+    .logonetflix img {
+        margin-left: -8%;
+        height: 29px;
+        margin-bottom: 15%;
+    }
+
+    .signinbtn {
+        font-size: 13px;
+        padding: 1px;
+        margin-bottom: 22%;
+        margin-left: 3%;
+    }
+
+    .sel {
+        font-size: 16px;
+        margin-left: 30%;
+        margin-top: -22%;
+    }
+
+    .newsel {
+        padding: 1px;
+        font-size: 16px;
+        margin-left: 0%;
+    }
+
+    .search-section h2 {
+        font-size: 24px;
+        margin-bottom: 5% !important;
+        margin-top: -7%;
+    }
+
+    .movies-section h2 {
+        font-size: 25px;
+        margin-left: -5%;
+    }
+
+    #searchForm {
+        position: relative;
+    }
+
+    #searchForm input {
+        width: 65% !important;
+        font-size: 14px !important;
+        padding: 8px !important;
+        margin: 0 !important;
+    }
+
+    #searchForm button {
+        font-size: 14px !important;
+        padding: 8px 16px !important;
+        margin: 0 !important;
+        position: absolute;
+        top: 0.5%;
+        right: 3%;
+    }
+
+    #prevBtn {
+        font-size: 76%;
+    }
+
+    #nextBtn {
+        font-size: 76%;
+    }
+
+    .features h2 {
+        font-size: 27px;
+    }
+
+    .tv p {
+        font-size: 15px;
+    }
+
+    .row {
+        padding: 21px 0;
+    }
+
+    .tvimg img {
+        margin-top: 7%;
+    }
+
+    .faq h2 {
+        font-size: 25px;
+        margin-top: 7%;
+    }
+
+    .accordion {
+        margin-top: 12%;
+    }
+
+    .lable {
+        font-size: 15px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+
+    .accordion {
+        margin-bottom: 2%;
+    }
+
+    .newlist {
+        margin-bottom: 13%;
+    }
+
+    .newlist a {
+        font-size: 15px;
+    }
+
+    .footer h2 {
+        margin-bottom: 9%;
+    }
+
+    .tvimganim {
+        display: block;
+    }
+
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .tvimganim {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-content h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .header-content h4 {
+        font-size: 13px;
+    }
+
+    .header-content p {
+        font-size: 12px;
+    }
+
+    .email-signup button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .search-section {
+        margin-bottom: -4%;
+    }
+
+    #searchForm input {
+        font-size: 18px;
+    }
+
+    .tv h2 {
+        font-size: 28px;
+    }
+
+    .tv p {
+        font-size: 20px;
+    }
+
+    .faq {
+        margin-bottom: -4%;
+    }
+
+    .faq h2 {
+        font-size: 30px;
+        margin-bottom: -5%;
+        margin-top: 5.1.1%;
+    }
+
+    .acc {
+        margin-top: 15%;
+    }
+
+    .tvimganim {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header-content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .header-content h4 {
+        font-size: 15px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+    .email-signup button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .tv h2 {
+        font-size: 33px;
+    }
+
+    .tv p {
+        font-size: 18px;
+    }
+
+    .faq h2 {
+        font-size: 35px;
+        margin-bottom: -3.2%;
+    }
+
+    .newlist a {
+        line-height: 175%;
+    }
+
+    .tvimganim {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1499.98px) {
+    .tvimganim {
+        display: none;
+    }
+}
